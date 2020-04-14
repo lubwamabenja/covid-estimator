@@ -5,7 +5,9 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "lint": "eslint ./src/"
+    "lint": "eslint ./src/",
+    "start":"node index.js"
+    
   },
   "dependencies": {
     "cors": "^2.8.5",
