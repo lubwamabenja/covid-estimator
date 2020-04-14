@@ -6,7 +6,7 @@
   "private": false,
   "scripts": {
     "lint": "eslint ./src/",
-    "start": "node index.js"
+    "start": "node src/estimator.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
