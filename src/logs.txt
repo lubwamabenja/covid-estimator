@@ -1,0 +1,7 @@
+undefined		undefined		null		function toLocaleString() { [native code] }
+undefined		undefined		null		function toLocaleString() { [native code] }
+undefined		undefined		null		0.118
+undefined		undefined		null		0.015
+POST		/api/v1/on-covid-19		200		0.125ms
+GET		/api/v1/on-covid-19/logs		200		0.013ms
+GET		/api/v1/on-covid-19/logs		200		0.011ms

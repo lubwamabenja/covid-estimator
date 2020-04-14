@@ -1,10 +1,10 @@
 // function to calculate available
-export const losses = (infectionsByRequestedTime, percentageIncome, avgIncome, days) => {
+const losses = (infectionsByRequestedTime, percentageIncome, avgIncome, days) => {
   const estimatedLoss = (infectionsByRequestedTime * percentageIncome * avgIncome) / days;
   return Math.floor(estimatedLoss);
 };
 
-export const calcluateDays = (periodType, value) => {
+const calcluateDays = (periodType, value) => {
   switch (periodType) {
     case 'months':
       return value * 30;
@@ -17,7 +17,7 @@ export const calcluateDays = (periodType, value) => {
   }
 };
 
-export const prototypeEstimator = ({
+const prototypeEstimator = ({
   reportedCases,
   totalHospitalBeds,
   periodType,
@@ -45,3 +45,4 @@ export const prototypeEstimator = ({
     )
   };
 };
+module.exports = prototypeEstimator;
