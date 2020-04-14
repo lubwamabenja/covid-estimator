@@ -50,7 +50,11 @@ App.post('/api/v1/on-covid-19/xml', (req, res) => {
 
 App.get('/api/v1/on-covid-19/logs', (req, res) => {
   const filepath = path.join(__dirname, 'logs.txt');
-  const logs = fs.readFileSync(filepath, 'utf8');
+  const logs = fs.readFileSync(filepath, 'utf8', (err) => {
+    if (err) {
+      throw new Error('Faailed to read file');
+    }
+  });
   res.status(200).send(logs);
   createLog(req, res);
   res.end();
