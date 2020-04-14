@@ -8,6 +8,8 @@
     "lint": "eslint ./src/"
   },
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
     "on-covid-19": "^0.1.3"
   },
   "devDependencies": {
